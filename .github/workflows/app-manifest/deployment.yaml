@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: NodeJs-app
+  labels:
+    app: Netflix-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: Netflix-app
+  template:
+    metadata:
+      labels:
+        app: Netflix-app
+    spec:
+      containers:
+      - name: Netflix-app
+        image: 076226033208.dkr.ecr.ap-south-1.amazonaws.com/Netflix:1cab88cddde8647011843064e77a9e058002c495
+        ports:
+        - containerPort: 3000
+          #ismail
