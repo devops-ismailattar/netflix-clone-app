@@ -70,8 +70,9 @@ jobs:
             - name: Build and push Docker images
               uses: docker/build-push-action@v6.18.0
               with: 
+                context: .
                 push: true
-                tag: 076226033208.dkr.ecr.ap-south-1.amazonaws.com/netflix-app:${{ github.sha }}
+                tags: 076226033208.dkr.ecr.ap-south-1.amazonaws.com/netflix-app:${{ github.sha }}
                     
 
     update-deployment-files:
