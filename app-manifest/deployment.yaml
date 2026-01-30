@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: Netflix-app
-        image: 076226033208.dkr.ecr.ap-south-1.amazonaws.com/netflix-app:20b3169f8017a5a7b0adf6c4d17269b27a3f5bea
+        image: 076226033208.dkr.ecr.ap-south-1.amazonaws.com/netflix-app:2473bfba1b86b83b09daeaf93934fcaa5e4e191a
         ports:
         - containerPort: 3000
           #ismail
